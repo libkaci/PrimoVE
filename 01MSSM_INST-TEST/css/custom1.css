@@ -1,0 +1,219 @@
+/* #221F72 = top bar
+   #E6E6E6 = top bar text, hover
+   #E6E6E6 = guest/name
+   #221F72 = search bar
+   #E6E6E6 = sign in
+/*
+/*Top Banner Background Color */
+
+
+ 
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {background-color: #565759; }
+ 
+/*!!!!!!!  TOPBAR - USER AREA - HOVER COLOR !!!!!!!!*/
+  md-fab-toolbar md-toolbar {
+      background-color: #E6E6E6!important;
+      pointer-events: none;
+      z-index: 23;
+  }
+  
+  
+  /*!!!!!!!  TOPBAR - USER AREA - MY LIBRARY CARD COLOR !!!!!!!!*/
+ div.top-nav-bar, md-fab-trigger.align-with-text.show-user-info, md-fab-trigger.align-with-text.show-user-info::after {
+      background-color: #E6E6E6!important;
+  }
+  
+    prm-topbar .md-button {
+  color: #221F72 !important;
+}
+ 
+ 
+/*Search Bar Wrapper color */
+  prm-search-bar, prm-atoz-search-bar, prm-journals-search-bar, prm-browse-search-bar, prm-tags-search-bar, prm-newspapers-search-bar, prm-collection-gallery-header .collection-header-inner {
+    background-color: #221F72;
+}
+
+prm-atoz-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-browse-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-newspapers-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-tags-search-bar .search-switch-buttons .md-button.switch-to-advanced.span
+
+
+ {
+color: white;
+font-weight:bold
+}
+
+ 
+ /* Overlay when viewing more ... top links */
+nav prm-spinner .prm-hue2.diamond, md-backdrop.md-opaque {
+    background-color: #DDDDDD;
+}
+  /* Expand logo size */
+prm-logo .product-logo, prm-logo img {
+ padding: .1em;
+}
+
+
+/*Hide Tags in Detailed Display
+[aria-label="Tags"]{display:none;}
+*/
+
+/*Hide sign in alert bar*/
+.alert-bar {
+display:none;
+}
+
+/*Alert Banner
+
+primo-explore-top-alert .bar.alert-bar {
+  font-size: 18px;
+  font-weight: 700;
+  border-color: #D80B8C;
+  background-color: #D80B8C !important;
+}
+*/
+
+/* Emergency Broadcast Banner no link
+body::before {
+content: "The Levy Library is open for individual study. Reserve a seat at libcal.mssm.edu/reserve";
+display: inline-block;
+padding: 8px;
+background: #D80B8C;
+text-align: center;
+width: 100%;
+font-weight: bold;
+font-size: 18px;
+color: white;
+}
+-------------end broadcast banner-----------------------*/
+
+/* INTERFACE CHANGES 2021-06-09 */
+
+/* -- bold availability and item title */
+.availability-status,
+.item-title {
+    font-weight: bold;
+    letter-spacing: .01em;
+}
+
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {
+    transform: none;
+}
+
+.section-content .md-chips {
+    margin-left: 1em;
+}
+
+.md-range-content.layout-align-start-center.layout-row {
+    margin-left: 1em;
+}
+
+prm-location-items div.media-content-type {
+        z-index: 11;
+        margin-top: -2px;
+        word-break: break-all;
+		font-size: 12px;
+		color: black;
+}
+
+prm-location-items div.tab-content-header {
+    background-color: #fff;
+    padding: 1em;
+}
+
+prm-location-items div.layout-column {
+    display: inline-block;
+}
+
+prm-location-items div.layout-column h4 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:last-of-type {
+    display: none;
+}
+
+prm-location-items div.layout-column h4::before {
+    content: "Building";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+prm-location-items div.layout-column p:first-of-type span:first-of-type {
+    display: inline-block;
+    width: 25%;
+}
+
+prm-location-items div.layout-column p:first-of-type span:first-of-type::before {
+    content: "Availability";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(2) {
+    display: none;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(3) {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(3)::before {
+    content: "Location";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(4) {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(5)::before {
+    content: "Barcode";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #000000;
+} 
+
+prm-location-items div.layout-column p:first-of-type span:last-of-type {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type span:last-of-type::before {
+    content: "Call Number";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #000000;
+} 
+
+
