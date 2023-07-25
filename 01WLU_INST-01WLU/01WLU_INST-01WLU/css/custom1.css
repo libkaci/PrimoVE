@@ -1,0 +1,208 @@
+/* Change #0E1938 to main color */
+/*--------Top Banner ---------------*/
+
+/*Top Banner Background Color */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {
+	background-color: #fff; 
+}
+
+/*-----User Area -------*/
+  /*UserName Guest */
+prm-user-area .user-name {
+    text-transform: none;
+    font-weight: 600;
+    color: #376FBD!important;
+    text-align: left;
+    max-width: 80px;
+}
+
+/*background for Guest Button And Icon */
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
+    background-color: #fff;
+}
+
+  /*Hover */
+  /*NAV BAR REGULAR button hover */
+  prm-topbar .md-button:focus, prm-topbar .md-button:hover {
+      color: #fff !important;
+      background-color: #0E1938 !important;
+      box-shadow: none;
+  }
+
+  prm-user-area .user-menu-button .user-name {
+      text-transform: none;
+      font-weight: 600;
+      color: #0E1938;
+      text-align: left;
+      max-width: 150px;
+  }
+
+/*  TOPBAR - USER AREA - HOVER COLOR */
+  md-fab-toolbar md-toolbar {
+      background-color: #eee !important;
+      pointer-events: none;
+      z-index: 23;
+  }
+  
+/*Top Bar- User Area - Button Link Color - On Hover */
+/*Language Button hover */
+
+prm-topbar .md-button {
+  color: #0E1938 !important;
+  text-transform: none;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+    color: #0E1938;
+    height: 100%;
+}
+
+/*User Area - Hover - Button  Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
+    color: #0E1938;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
+      color: #0E1938;
+  }
+
+  /*User Area - Hover - Button on Hover Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
+    background-color: #eee;
+    color: #fff;
+    box-shadow: none!important;
+}
+
+/*Language Label - On Hover */
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy:hover {
+    color: #fff; /*Language - English- Text Color */
+    background-color: #0E1938; /*background-color for English Label*/
+    height: 100%;
+}
+
+.prm-primary-bg, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after {
+    background-color: #203973;
+}
+
+prm-search-bar .search-input {
+    flex: 1 0 122px;
+}
+
+prm-search-bar .simple-search-wrapper md-autocomplete-wrap {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* WLU INTERFACE CHANGES 2019-03-28 */
+
+/* -- bold availability and item title */
+.availability-status,
+.item-title {
+    font-weight: bold;
+    letter-spacing: .01em;
+}
+
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {
+    transform: none;
+}
+
+.section-content .md-chips {
+    margin-left: 1em;
+}
+
+.md-range-content.layout-align-start-center.layout-row {
+    margin-left: 1em;
+}
+
+prm-location-items div.tab-content-header {
+    background-color: #fff;
+    padding: 1em;
+}
+
+prm-location-items div.layout-column {
+    display: inline-block;
+}
+
+prm-location-items div.layout-column h4 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:last-of-type {
+    display: none;
+}
+
+prm-location-items div.layout-column h4::before {
+    content: "Building";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #999;
+}
+
+prm-location-items div.layout-column p:first-of-type span:first-of-type {
+    display: inline-block;
+    width: 25%;
+}
+
+prm-location-items div.layout-column p:first-of-type span:first-of-type::before {
+    content: "Availability";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #999;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(2) {
+    display: none;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(3) {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type span:nth-of-type(3)::before {
+    content: "Location";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #999;
+}
+
+prm-location-items div.layout-column p:first-of-type span:last-of-type {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+prm-location-items div.layout-column p:first-of-type span:last-of-type::before {
+    content: "Call Number";
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #999;
+} 
+
+prm-action-list-after wlu-report-problem div {
+    margin-top: 2.5em;
+}
